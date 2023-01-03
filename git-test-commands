@@ -1,1 +1,496 @@
 
+    1  ls -la | grep "^l"
+    2  ls -la | grep "^h"
+    3  ls
+    4  cd linux-practice/
+    5  ls -la | grep "^h"
+    6  ls
+    7  ls -la
+    8  ls -la | grep "^a"
+    9  cat file 
+   10  cat practice_file 
+   11  ls -la | grep "h"
+   12  ls -la | xargs grep "h"
+   13  ls -la | xargs grep "^h"
+   14  ls | xargs grep "^h"
+   15  ls | xargs grep "^a"
+   16  history
+   17  mkdir linux-practice
+   18  cd linux-practice/
+   19  touch abc
+   20  touch file
+   21  vi prctice
+   22  mv prctice practice_file
+   23  ls
+   24  vi devops
+   25  ls
+   26  find -type f -atime 5
+   27  find . -type f -atime +5
+   28  find . -type f -atime -5
+   29  find . -type f -mtime -1
+   30  find . -type f -nouser
+   31  ls /usr |grep "abc"
+   32  ls /linux-practice -type f "abc"
+   33  ls /linux-practice | grep "abc"
+   34  cd /usr
+   35  ls
+   36  ls /usr | grep "lib.*"
+   37  cd /
+   38  ls |grep "^b.*" 
+   39  ls -ltr
+   40  find . -type f -perm 0550
+   41  sudo find . -type f -perm 0550
+   42  find . -type f -perm 0555
+   43  sudo find . -type f -perm 0555
+   44  sudo find . -type f -perm 0444
+   45  sudo find . -type f -perm 0644
+   46  sudo find . -type f -perm 0111
+   47  sudo find . -type f -perm 0644
+   48  cd /home/ec2-user/
+   49  cd linux-practice/
+   50  ls
+   51  ls -lt
+   52  find . -type f -perm 0664 | xargs chmod 0777
+   53  ls -ltr
+   54  find . -type f -perm 0777 | xargs chmod 0664
+   55  ls -ltr
+   56  chmod 0744 abc
+   57  ls -ltr
+   58  whoami
+   59  user
+   60  users
+   61  find .-type f -not-name "f."
+   62  find .-type f -not-name "f.*"
+   63  find . -type f -not-name "f.*"
+   64  find . -type f -not -name "f.*"
+   65  find . -type f -not -name "f"
+   66  find . -type f -user ec2-user
+   67  ps -u ec2-user 
+   68  ps -u ec2-user | awk -F " " 'print{$2} '
+   69  cd linux-practice/
+   70  ls
+   71  find . -type f -cmin -60
+   72  find . -type f -cmin 60
+   73  find . -type f -cmin +60
+   74  find . -type f -cmin -120
+   75  find . -type f -mtime 1
+   76  find . -type f -mtime -2
+   77  find . -type -f -name "*" | grep "hi"
+   78  find . -type f -name "*" | grep "hi"
+   79  find . -type f -name "*" | xargs grep "hi"
+   80  find . -type f -size 50M
+   81  find . -type f -size 1M
+   82  find . -type f "*" |xargs grep "linux"
+   83  find . -type f "*" | xargs grep "linux"
+   84  find . -type f "*" | xargs grep "hi"
+   85  find . -type f -name "*" | xargs grep "hi"
+   86  grep MemTotal /proc/meminfo
+   87  vi /etc/host
+   88  echo $0
+   89  MemTotal /proc/meminfo
+   90  grep MemTotal /proc/meminfo
+   91  uname -a
+   92  uname -v
+   93  su - manoj
+   94  user
+   95  users
+   96  less /etc/passwd
+   97  cat /etc/passwd |wc -l
+   98  cat /etc/passwd |wc -c
+   99  awk -F " " '{print $1}'
+  100  awk -F " " '{print $1}' /etc/passwd
+  101  awk -F ":" '{print $1}' /etc/passwd
+  102  userdel sujay
+  103  sudo userdel sujay
+  104  sudo useradd manoj
+  105  sudo passwd manoj
+  106  sudo su manoj
+  107  adduser naveen
+  108  sudo adduser naveen
+  109  passwd naveen
+  110  sudo passwd naveen
+  111  su - naveen
+  112  cd linux-practice/
+  113  umask sujay_file
+  114  umask 0777 sujay_file
+  115  ls -ltr
+  116  cd linux-practice/
+  117  umask 0000 sujay123_file
+  118  ls -ltr
+  119  ls -a
+  120  touch sujay1123
+  121  ls -ltr
+  122  umask 000
+  123  touch abc
+  124  touch abcde
+  125  ls -ltr
+  126  sudo yum update
+  127  vi plato
+  128  cd linux-practice/
+  129  ls
+  130  useradd sujay
+  131  sudo useradd sujay
+  132  sudo su sujay
+  133  mkdir softlink
+  134  cls -s /home/linux_practice/abc abc-softlink
+  135  ln -s /home/linux_practice/abc abc-softlink
+  136  ls 
+  137  ln -s /home/linux_practice/abc /home/ec2-user/softlink/abc-softlink
+  138  ls -a
+  139  pwd
+  140  cd /home/ec2-user
+  141  ls
+  142  cat softlink/
+  143  history
+  144  sudo useradd -m  demouser
+  145  su demouser
+  146  sudo passwd demouser
+  147  sudo vi /etc/sudoers
+  148  users
+  149  su demouser
+  150  cd linux-practice/
+  151  ls -ltr
+  152  find . -type -size +1M
+  153  find . -type f -size +1M
+  154  find . -type f -size 1M
+  155  find . -type f -size 2M
+  156  find . -type f -size 0M
+  157  find . -type f -size 0.5M
+  158  find . -type f -empty
+  159  ls -ltr
+  160  history
+  161  $!
+  162  $$
+  163  echo $!
+  164  echo $#
+  165  echo $
+  166  echo $*
+  167  $*
+  168  history
+  169  free
+  170  free -g
+  171  free -t
+  172  MemTotal /proc/meminfo
+  173  history
+  174  MemTotal /proc/meminfo
+  175  sudo MemTotal /proc/meminfo
+  176  grep MemTotal /proc/meminfo
+  177  ip addr
+  178  aws ec2 describe-instances --query 'Reservations[].Instances[].{Name: Tags[?Key==`Name`].Value | [0], Role: Tags[?Key==`Billing by Role`].Value | [0]}' --output text
+  179  git --version
+  180  sudo yum install git&
+  181  y
+  182  mkdir git_test
+  183  cd git_test/
+  184  git init
+  185  ls -a
+  186  yum install java -y &
+  187  sudo yum install java -y &
+  188  git --version
+  189  sudo yum install git -y
+  190  git --version
+  191  cd git_test/
+  192  git init
+  193  ls -a
+  194  git branch
+  195  touch master-abc
+  196  git branch
+  197  git branch -a
+  198  git status 
+  199  git add master-abc 
+  200  git status
+  201  git commit -m "trying to push from staging area to local repo"
+  202  git status
+  203  git branch
+  204  git log
+  205  git checkout -b branch-1
+  206  ls
+  207  git checkout -b branch-1
+  208  git branch branch-1 
+  209  git checkout branch-1 
+  210  touch manoj
+  211  git add *
+  212  git commit  -m "push from staginh to local repo"
+  213  git status
+  214  git log
+  215  ls
+  216  git checkout -b naveen
+  217  ls 
+  218  touch aws
+  219  git add *
+  220  git commit -m "push to local repo"
+  221  git status
+  222  git checkout master 
+  223  ls
+  224  git checkout branch-1 
+  225  ls
+  226  git branch sujay
+  227  git checkout sujay 
+  228  ls
+  229  tree
+  230  sudo yum install tree -y
+  231  tree
+  232  git branch
+  233  ls
+  234  touch s123
+  235  git add *
+  236  git commit -m "push to central repo"
+  237  git log
+  238  git checkout -b manoj
+  239  touch hello
+  240  git add *
+  241  git commit -m "hello manoj"
+  242  git log
+  243  ls
+  244  cd git_test/
+  245  ls
+  246  git branch 
+  247  ls 
+  248  git log
+  249  ls
+  250  cd git_test/
+  251  ls
+  252  git branch
+  253  git log
+  254  git checkout -b master && git cherrypick d49b4e5eab18521ddff74797a20cceabc64a8cb2
+  255  git checkout master && git cherrypick d49b4e5eab18521ddff74797a20cceabc64a8cb2
+  256  git checkout master && git cherry-pick d49b4e5eab18521ddff74797a20cceabc64a8cb2
+  257  git branch 
+  258  ls
+  259  git checkout manoj 
+  260  ls
+  261  git log
+  262  touch manoj_abc naveen_abc sujay_abc
+  263  git add *
+  264  git commit -m " adding  all the "
+  265  git log
+  266  git rebase -i HEAD~3
+  267  git log
+  268  git branch 
+  269  git log
+  270  git rebase -i HEAD~3
+  271  cd git_test/
+  272  git branch 
+  273  ls
+  274  git log
+  275  git rebase -i HEAD~3
+  276  gir log
+  277  git log
+  278  git branch
+  279  git rebase --continue
+  280  git rebase --abort
+  281  git branch
+  282  git log
+  283  git rebase -i HEAD~3
+  284  git rebase --abort
+  285  git rebase -i HEAD~3
+  286  git log
+  287  git branch
+  288  cd git_test/
+  289  git branch 
+  290  git checkout manoj
+  291  gti log
+  292  git log
+  293  git checkout sujay
+  294  git log
+  295  git cherry-pick 83a91d18c7afbd8395171d546a62148f129a89a0
+  296  git log
+  297  git checkout naveen 
+  298  git branch
+  299  git cherry-pick 20bd156222774380a01bcdbfd2b931445a07ac9d
+  300  git log
+  301  ls
+  302  git branch
+  303  git checkout branch-1 
+  304  git log
+  305  ls
+  306  git cherry-pick 4f59b7378902aceb4e436c681ce227b108c4b032
+  307  git log
+  308  ls -a
+  309  touch abcd
+  310  vi abcd 
+  311  git add *
+  312  git status
+  313  git reset
+  314  git staus
+  315  git status
+  316  git add *
+  317  git status
+  318  git commit -m "adding abcd"
+  319  git status
+  320  git revert
+  321  git log
+  322  git revert 17a963d54abd04370502f8c147647cf6bd7e042d 
+  323  mkdir practice 
+  324  cd practice/
+  325  vi abcd
+  326  cat abcd
+  327  sed -n '10p'abcd
+  328  sed -n '10p' abcd
+  329  ls
+  330  grep "plato" abcd
+  331  sed -n '10 p' abcd
+  332  sed -n '5 p' abcd
+  333  sed -n '1p' abcd
+  334  sed -n '2p' abcd
+  335  cd ..
+  336  cp /home/ec2-user/practice/abcd /home/ec2-user/plato
+  337  ls
+  338  cd pl
+  339  ls -ltr
+  340  ln -s  /home/ec2-user/practice/abcd /home/ec2-user/plato /home/ec2-user/plato-soft
+  341  ln -s  /home/ec2-user/practice/abcd /home/ec2-user/plato-soft
+  342  ls -ltr
+  343  ln   /home/ec2-user/practice/abcd /home/ec2-user/plato-hard
+  344  ls -ltr
+  345  chmod 0777 plato
+  346  ls -ltr
+  347  grep MemTotal /proc/meminfo
+  348  sort uname 
+  349  sort practice
+  350  sort /home/ec2-user/practice/plato
+  351  sort /home/ec2-user/practice/abcd
+  352  cat practice/plato
+  353  ls
+  354  cat plato
+  355  cat plato | uniq
+  356  sed '5d' abcd
+  357  cd practice/
+  358  sed '5d' abcd
+  359  grep -e "his" "own" abcd
+  360  grep -e "his" -e "own" abcd
+  361  grep -ie "his own" -e "own" abcd
+  362  grep -i "" abcd
+  363  grep -e "philosophical" abcd
+  364  vi abcd
+  365  cat abcd 
+  366  sed '%s/plato/god/g' abcd
+  367  sed 's/plato/god/g' abcd
+  368  grep -i "god" abcd
+  369  grep -i "plato" abcd
+  370  sed -i 's/plato/god/g' abcd
+  371  cat abcd 
+  372  grep -i "god" abcd
+  373  sed -i 's/was/is/g' abcd
+  374  cat abcd 
+  375  grep "is" abcd
+  376  grep "was" abcd
+  377  grep "is" abcd
+  378  sed -i 's/is/was/g' abcd
+  379  cat abcd
+  380  grep "is" abcd
+  381  uname 
+  382  uname -a
+  383  ps -ef |grep "linux" |awk -F " " {print $2}
+  384  ps -ef
+  385  ps -ef |grep "ec-user" |awk -F " " {print $2}
+  386  ps -ef |grep "ec2-user" |awk -F " " {print $2}
+  387  ps -ef |grep "ec2-user" |awk -F " " '{print $2}'
+  388  top
+  389  free
+  390  fg %1
+  391   cd practice/
+  392  netstat -ntulp
+  393  netstat -l
+  394  date
+  395  date %+m
+  396  date +%m
+  397  date +%d
+  398  date +%t
+  399  date +%y
+  400  hostname
+  401  hostaname -i
+  402  hostname -i
+  403  ifconfig
+  404  touch suajy{1..5}
+  405  ls
+  406  mkdir suajy{1..5}
+  407  mkdir suajyy{1..5}
+  408  ls
+  409  rmdir suajyy{1..5}
+  410  ls
+  411  cp /home/ec2-user/abc-softlink ./plato1
+  412  ls
+  413  cat plato-soft 
+  414  cp /home/ec2-user/plato  ./aritotle
+  415  ls
+  416  cat aritotle 
+  417  clear
+  418  mkdir practice1
+  419  cd practice1
+  420  ls
+  421  cp /home/ec2-user/plato ./plato1
+  422  ls
+  423  cat plato1 
+  424  grep "plato" plato1
+  425  wc -l plato1
+  426  wc -w plato1 
+  427  wc -c plato1 
+  428  sed -i 's/plato/aristotle/g' plato1
+  429  cat plato1 
+  430  grep "aristotle" plato1 
+  431  grep -i "plato" plato1 
+  432  sed -i 's/Plato/Aristotle/g' plato1 
+  433  cat plato1 
+  434  ls -ltr
+  435  touch abcd{1..5}
+  436  ls -ltr
+  437  ls -ltr | awk -F " " '{print $(NF)}'
+  438  cut -d " " f1 plato1 
+  439  cut -d " " F1 plato1 
+  440  cut -d " " f2 plato1 
+  441  ls -ltr | cut -d  " " f1 
+  442  ls -ltr | cut -d  " " -f1
+  443  find . -type f -perm 0664
+  444  find . -type f -empty
+  445  find . -type f -not-empty
+  446  grep MemTotal /proc/meminfo
+  447  find . -type f -mmin 30
+  448  find . -type f -mmin -30
+  449  ps 
+  450  ps -ef
+  451  ps aux 
+  452  man ps
+  453  ps -u ec2-user
+  454  ps -u ec2-user | awk -F " " 'print $1'
+  455  ps -u ec2-user | awk -F " " '{print $1}'
+  456  sudo su
+  457  ls
+  458  cd practice1
+  459  ls
+  460  history
+  461  env
+  462  set env
+  463  setenv
+  464  history
+  465  tail -f /var/log/messages
+  466  git branch
+  467  ls
+  468  cd linux-practice/
+  469  ls -a
+  470  which git
+  471  cd git_test
+  472  cd ..
+  473  cd git_test/
+  474  ls -a
+  475  history 
+  476  date
+  477  find . -type -mtime -1 
+  478  find . -type f -mtime -1 
+  479  history -t"%F %T
+  480  history 50
+  481  $ history | grep '2021-01-25
+  482  date
+  483  ls
+  484  git status
+  485  git log
+  486  date
+  487  history | grep "Tue Jan  3 14:19:38 UTC 2023"
+  488  history
+  489  history | grep "Tue Jan  3 14:19:38 UTC 2023"
+  490  grep "Tue Jan  3 14:19:38 UTC 2023" | history
+  491  git clone https://github.com/5-sujay/devops-prcactice-commands.git
+  492  ls 
+  493  cd devops-prcactice-commands/
+  494  ls
+  495  history >> git-test-commands 
