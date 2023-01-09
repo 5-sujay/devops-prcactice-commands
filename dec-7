@@ -1,0 +1,99 @@
+ 855  vi kill-pid-with-top-cpu-utilisation.sh
+  856  grep MemTotal /proc/meminfo
+  857  vi kill-pid-with-top-cpu-utilisation.sh
+  858  sh kill-pid-with-top-cpu-utilisation.sh
+  859  vi kill-pid-with-top-cpu-utilisation.sh
+  860  sh kill-pid-with-top-cpu-utilisation.sh
+  861  vi kill-pid-with-top-cpu-utilisation.sh
+  862  sh kill-pid-with-top-cpu-utilisation.sh
+  863  vi kill-pid-with-top-cpu-utilisation.sh
+  864  sh kill-pid-with-top-cpu-utilisation.sh
+  865  ps aux --sort %cpu
+  866  ps aux --sort %cpu |head
+  867  vi kill-pid-with-top-cpu-utilisation.sh
+  868  ps aux | head -2 |tail -1 | awk -F "" {'print $2'}
+  869  history
+  870   while true; do echo; done
+  871  :wq
+  872  ps aux
+  873  sh kill-pid-with-top-cpu-utilisation.sh
+  874  vi kill-pid-with-top-cpu-utilisation.sh
+  875  sh kill-pid-with-top-cpu-utilisation.sh
+  876  vi kill-pid-with-top-cpu-utilisation.sh
+  877  sh kill-pid-with-top-cpu-utilisation.sh
+  878  ps aux
+  879  p aux
+  880  ps aux
+  881  vi kill-pid-with-top-cpu-utilisation.sh
+  882  sh kill-pid-with-top-cpu-utilisation.sh
+  883  vi kill-pid-with-top-cpu-utilisation.sh
+  884  ps aux --sort -%cpu | head -2 |tail -1 | awk -F " " {'print $2'}
+  885  ps aux --sort -%cpu
+  886  sh kill-pid-with-top-cpu-utilisation.sh
+  887  ls
+  888  grep MemTotal /proc/meminfo
+  889  ps aux --sort -%mem | head -10
+  890  ps
+  891  ps aux
+  892  ps aux |head -1
+  893  ps aux |head -2 |tail -1
+  894  ps aux |head -2 |tail -1 |awk -F " " '{print $2}'
+  895  ps aux --sort -%cpu | head -10
+  896  ls
+  897  ps aux
+  898  ps aux |head -2 |tail -1
+  899  ps aux |head -2 |tail -1 |awk -F "" '{print $2}'
+  900  ps aux |head -2 |tail -1 |awk -F " " '{print $2}'
+  901  vi kill-pid-with-top-cpu-utilisation.sh
+  902  sh kill-pid-with-top-cpu-utilisation.sh
+  903  ps aux
+  904  yum install git -y
+  905  sudo yum install git -y
+  906  sudo yum install wget -y
+  907  sudo yum install jenkins -y
+  908  sudo yum install java -y
+  909  which java
+  910  ps aux
+  911  ps aux --sort -%cpu
+  912  ps aux --sort -%cpu  |grep "6894"
+  913  ps aux --sort -%cpu  |grep "12948"
+  914  ps aux --sort -%cpu  |grep "4298"
+  915  ps aux --sort -%cpu  |grep "root"
+  916  ps aux --sort -%cpu
+  917  ps aux --sort -%cpu  |grep "14648"
+  918  ps aux --sort -%cpu  |head -5 | grep "14648"
+  919  ps aux --sort -%cpu  |head -5
+  920  ps aux --sort -%cpu  |head -5 |grep "41"
+  921  ps aux --sort -%cpu  |head -5 |grep "1"
+  922  ps aux --sort -%cpu  |head -10 |grep "1"
+  923  ps aux --sort -%cpu
+  924  ps aux --sort -%cpu  | head
+  925  ps aux --sort -%cpu  | head |grep 11
+  926  ps aux --sort -%cpu  | head |grep "11"
+  927  ps aux --sort -%cpu
+  928  ps aux --sort -%cpu  | grep 16071
+  929  ps aux --sort -%cpu  | grep 3884
+  930  ls
+  931  vi kill-pid-with-top-cpu-utilisation.sh
+  932  sh kill-pid-with-top-cpu-utilisation.sh
+  933  enter yes to kill the top cpu consuming process
+  934  ps aux --sort %cpu
+  935  sh kill-pid-with-top-cpu-utilisation.sh
+  936  ps aux --sort %cpu
+  937  cat kill-pid-with-top-cpu-utilisation.sh
+  938  kill -9 1
+  939  sudo kill -9 1
+  940  ps aux --sort %cpu
+  941  sudo kill -9 1
+  942  ps aux --sort %cpu
+  943  ps aux --sort %mem
+  944  ps aux --sort -r %mem
+  945  ps aux | sort -r %mem
+  946  ps aux | sort -r %MEM
+  947  ps aux --sort %mem
+  948  ps aux --sort %mem |tail -1
+  949  ps aux --sort %mem |tail -1 |awk -F " " '{print $2}'
+  950  vi kill-pid-with-top-cpu-utilisation.sh
+  951  sh kill-pid-with-top-cpu-utilisation.sh
+  952  ps aux --sort %mem
+
